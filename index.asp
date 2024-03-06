@@ -1,1 +1,1 @@
-<% Response.Redirect "app/controller/user.asp" %>
+<% Response.Redirect "api/user.asp" %>

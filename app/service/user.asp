@@ -3,7 +3,7 @@
 
 <%
 Class UserService_Class
-	Public Function GetUserById(id)
+	Public Function GetById(id)
 		user = UserRepository.FindById(id)
 		data = ConvertUserJson(user)
 

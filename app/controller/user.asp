@@ -2,11 +2,15 @@
 <!-- #include virtual="app\service\user.asp" -->
 
 <%
+Class UserController
 
-id = request.QueryString("id")
-Set data = UserService.GetUserById(id)
+    Public Sub GetById
+        id = request.QueryString("id")
+        Set data = UserService.GetById(id)
 
-response.Write data
-response.ContentType "application/json"
+        response.Write data
+        response.ContentType "application/json"
+    End Sub
 
+End Class
 %>
