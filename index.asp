@@ -1,0 +1,1 @@
+<% Response.Redirect "app/controller/user.asp" %>
